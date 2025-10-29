@@ -1,4 +1,4 @@
-# 🧬 Molecular Dynamics (MD) Simulation of Risperidone–D2 Dopamine Receptor (6CM4)
+# 🧬 Pst Analysis of Molecular Dynamics (MD) Simulation of Risperidone–D2 Dopamine Receptor (6CM4)
 
 ## 🧠 Overview
 This project presents a **Molecular Dynamics (MD) simulation** of the **Risperidone–D2 Dopamine Receptor complex** (PDB ID: **6CM4**).  
