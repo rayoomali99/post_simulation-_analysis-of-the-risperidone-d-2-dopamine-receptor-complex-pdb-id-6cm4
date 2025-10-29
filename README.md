@@ -120,7 +120,11 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 
 ---
 
-## 💬 Conclusion
+## 🧩 Conclusion
+
+Overall, the 5 ns MD simulation demonstrated initial stabilization of the Risperidone–D2 receptor complex, with consistent RMSD, Rg, and SASA values and stable ligand–protein interactions.  
+While the system shows early equilibrium behavior, a longer production run (> 20 ns) would be required to fully confirm conformational stability and dynamic convergence.
+
 The **Risperidone–D2 receptor complex** demonstrated remarkable **structural stability** and **binding persistence** over the 5 ns simulation.  
 Minor fluctuations observed were confined to flexible loop regions, while the protein core and ligand maintained stable interactions.  
 These findings suggest a **stable receptor–ligand complex**, supporting Risperidone’s affinity for the D2 Dopamine Receptor.
@@ -135,4 +139,6 @@ These findings suggest a **stable receptor–ligand complex**, supporting Risper
 - **Temperature:** 310 K  
 - **Pressure:** 1 bar  
 - **Visualization:** VMD & QtGrace
+
+---
 
