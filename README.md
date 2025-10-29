@@ -21,8 +21,8 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ## 📈 Post-Simulation Analyses
 
 ### 1. Root Mean Square Deviation (RMSD)
-![RMSD Backbone](images/rmsd.png)  
-![RMSD Ligand](images/rmsd_lig.png)
+![RMSD Backbone](rmsd.png)  
+![RMSD Ligand](rmsd_lig.png)
 
 - **Files:** `rmsd.xvg`, `rmsd_lig.xvg`
 - The **protein backbone RMSD** stabilized around **0.8 nm**, indicating structural equilibrium after initial fluctuations.  
@@ -32,7 +32,7 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 2. Root Mean Square Fluctuation (RMSF)
-![RMSF Plot](images/rmsf.png)
+![RMSF Plot](rmsf.png)
 
 - **File:** `rmsf.xvg`
 - The RMSF plot revealed localized flexibility around **residues 900–1100**, likely corresponding to loop regions.  
@@ -42,7 +42,7 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 3. Radius of Gyration (Rg)
-![Rg Plot](images/rog.png)
+![Rg Plot](rog.png)
 
 - **File:** `gyrate.xvg`
 - The average **Rg value (~2.9 nm)** remained stable throughout the trajectory.  
@@ -52,7 +52,7 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 4. Solvent Accessible Surface Area (SASA)
-![SASA Plot](images/sasa.png)
+![SASA Plot](sasa.png)
 
 - **File:** `sasa.xvg`
 - SASA values fluctuated mildly around **300–350 nm²**, indicating minimal solvent exposure variation.  
@@ -61,7 +61,7 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 5. Hydrogen Bonds (H-Bonds)
-![Hbond Plot](images/hbond.png)
+![Hbond Plot](hbond.png)
 
 - **File:** `hbond.xvg`
 - Hydrogen bonding between the receptor and Risperidone was relatively sparse but recurrent, averaging **1 bond** near 4 ns.  
@@ -70,7 +70,7 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 6. Protein–Ligand Distance
-![Distance Plot](images/dis.png)
+![Distance Plot](dis.png)
 
 - **File:** `dist_LIG_PROT.xvg`
 - The center-of-mass distance stabilized around **3.5–4 nm** after the initial 1 ns.  
@@ -79,7 +79,7 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 7. Protein–Ligand Contacts
-![Contacts Plot](images/contact.png)
+![Contacts Plot](contact.png)
 
 - **File:** `contacts_LIG_PROT.xvg`
 - The number of atom–atom contacts (< 0.6 nm) increased sharply up to ~2000 and then plateaued.  
@@ -88,7 +88,7 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 8. Principal Component Analysis (PCA)
-![PCA Plot](images/pca.png)
+![PCA Plot](pca.png)
 
 - **Files:** `proj.xvg`, `pc1.xvg`, `pc2.xvg`
 - PCA revealed significant motion along **PC1 and PC2** vectors, reflecting the global collective dynamics of the receptor.  
@@ -97,7 +97,7 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 9. Free Energy Landscape (FEL)
-![FEL Plot](images/fel.png)
+![FEL Plot](fel.png)
 
 - **File:** `fel.xpm`
 - The **Gibbs energy landscape** exhibited a major low-energy basin (blue–green region) suggesting a dominant, stable conformation.  
