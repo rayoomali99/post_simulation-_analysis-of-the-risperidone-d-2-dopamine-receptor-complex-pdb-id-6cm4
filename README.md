@@ -21,7 +21,10 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ## 📈 Post-Simulation Analyses
 
 ### 1. Root Mean Square Deviation (RMSD)
-- **Files:** `rmsd_backbone.xvg`, `rmsd_ligand.xvg`
+![RMSD Backbone](images/rmsd.png)  
+![RMSD Ligand](images/rmsd_lig.png)
+
+- **Files:** `rmsd.xvg`, `rmsd_lig.xvg`
 - The **protein backbone RMSD** stabilized around **0.8 nm**, indicating structural equilibrium after initial fluctuations.  
 - The **ligand RMSD** remained around **4–5 nm**, showing flexible yet retained binding within the pocket.  
 - → **Conclusion:** The receptor reached dynamic stability, and the ligand maintained a consistent orientation.
@@ -29,6 +32,8 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 2. Root Mean Square Fluctuation (RMSF)
+![RMSF Plot](images/rmsf.png)
+
 - **File:** `rmsf.xvg`
 - The RMSF plot revealed localized flexibility around **residues 900–1100**, likely corresponding to loop regions.  
 - Most residues showed fluctuations below **0.4 nm**, suggesting overall backbone rigidity.  
@@ -37,6 +42,8 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 3. Radius of Gyration (Rg)
+![Rg Plot](images/rog.png)
+
 - **File:** `gyrate.xvg`
 - The average **Rg value (~2.9 nm)** remained stable throughout the trajectory.  
 - Slight variations across RgX, RgY, and RgZ axes confirmed compact folding.  
@@ -45,6 +52,8 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 4. Solvent Accessible Surface Area (SASA)
+![SASA Plot](images/sasa.png)
+
 - **File:** `sasa.xvg`
 - SASA values fluctuated mildly around **300–350 nm²**, indicating minimal solvent exposure variation.  
 - → **Interpretation:** The stable SASA profile supports consistent tertiary structure and solvent shielding.
@@ -52,6 +61,8 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 5. Hydrogen Bonds (H-Bonds)
+![Hbond Plot](images/hbond.png)
+
 - **File:** `hbond.xvg`
 - Hydrogen bonding between the receptor and Risperidone was relatively sparse but recurrent, averaging **1 bond** near 4 ns.  
 - → **Insight:** Although transient, these H-bonds contribute to maintaining ligand anchoring within the pocket.
@@ -59,6 +70,8 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 6. Protein–Ligand Distance
+![Distance Plot](images/dis.png)
+
 - **File:** `dist_LIG_PROT.xvg`
 - The center-of-mass distance stabilized around **3.5–4 nm** after the initial 1 ns.  
 - → **Interpretation:** The ligand settled into a stable binding pose with minimal drift.
@@ -66,6 +79,8 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 7. Protein–Ligand Contacts
+![Contacts Plot](images/contact.png)
+
 - **File:** `contacts_LIG_PROT.xvg`
 - The number of atom–atom contacts (< 0.6 nm) increased sharply up to ~2000 and then plateaued.  
 - → **Conclusion:** Formation of stable hydrophobic and polar interactions confirming persistent binding.
@@ -73,6 +88,8 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 8. Principal Component Analysis (PCA)
+![PCA Plot](images/pca.png)
+
 - **Files:** `proj.xvg`, `pc1.xvg`, `pc2.xvg`
 - PCA revealed significant motion along **PC1 and PC2** vectors, reflecting the global collective dynamics of the receptor.  
 - → **Observation:** The transition between conformational states was limited, confirming an equilibrated ensemble.
@@ -80,6 +97,8 @@ The simulation was conducted using **GROMACS** to investigate the **structural s
 ---
 
 ### 9. Free Energy Landscape (FEL)
+![FEL Plot](images/fel.png)
+
 - **File:** `fel.xpm`
 - The **Gibbs energy landscape** exhibited a major low-energy basin (blue–green region) suggesting a dominant, stable conformation.  
 - → **Conclusion:** The system maintained a single energetically favorable state throughout the simulation.
@@ -116,3 +135,4 @@ These findings suggest a **stable receptor–ligand complex**, supporting Risper
 - **Temperature:** 310 K  
 - **Pressure:** 1 bar  
 - **Visualization:** VMD & QtGrace
+
